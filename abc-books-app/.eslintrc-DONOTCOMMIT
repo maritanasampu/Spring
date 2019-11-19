@@ -1,0 +1,46 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+  },
+  "globals": {
+    "__TEST__": false,
+    "describe": false,
+    "expect": false,
+    "global": false,
+    "it": false,
+    "module": false
+  },
+  "rules": {
+    "import/no-duplicates": 0,
+    "import/no-named-as-default": 0,
+    "import/no-unresolved": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-max-props-per-line": [
+      1,
+      {
+        "when": "multiline"
+      }
+    ]
+  },
+  "extends": [
+    "eslint-config-tallink",
+    "eslint-config-tallink-react"
+  ],
+  "settings": {
+    "react": {
+      "version": "16.5.1"
+    }
+  }
+}
